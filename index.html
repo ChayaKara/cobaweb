@@ -357,29 +357,114 @@
     <!-- SCRIPT CMS DATABASE -->
     <script id="home-data-script">
     const homeConfig = {
-        hero: {
-            badge: "CitraKāra v2.0 Pro & Lite \u2014 Lebih Cepat & Stabil",
-            title: "Seleksi Ribuan Foto dalam Hitungan Detik, <br><span class=\"bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400 glow-text\">Bukan Jam.</span>",
-            desc: "Jangan biarkan proses pemilihan foto memperlambat kreativitas Anda. Nikmati preview RAW instan, rendering GPU super mulus, dan alur kerja cerdas yang mempercepat proses sortir foto anda."
+    "hero": {
+        "badge": "CitraKāra v2.0 Pro & Lite — Lebih Cepat & Stabil",
+        "title": "Seleksi Ribuan Foto dalam Hitungan Detik, <br><span class=\"bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400 glow-text\">Bukan Jam.</span>",
+        "desc": "Jangan biarkan proses pemilihan foto memperlambat kreativitas Anda. Nikmati preview RAW instan, rendering GPU super mulus, dan alur kerja cerdas yang mempercepat proses sortir foto anda."
+    },
+    "grid": [
+        {
+            "title": "Instant RAW Loading",
+            "desc": "Lupakan loading bar. Teknologi ekstraksi embedded thumbnail cerdas membuat file RAW 50MB+ terbuka secepat file JPG kecil.",
+            "color": "indigo",
+            "icon": "M13 10V3L4 14h7v7l9-11h-7z"
         },
-        grid: [
-            { title: "Instant RAW Loading", desc: "Lupakan loading bar. Teknologi ekstraksi embedded thumbnail cerdas membuat file RAW 50MB+ terbuka secepat file JPG kecil.", color: "indigo", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
-            { title: "GPU Accelerated", desc: "Dibangun dengan engine OpenGL. Zoom in/out, panning, dan transisi antar foto terasa \"buttery smooth\" tanpa patah-patah.", color: "purple", icon: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" },
-            { title: "Smart Sorting", desc: "9 Destinasi Hotkey, 1-Key Action, dan Auto-Advance. Sistem yang dirancang khusus untuk kecepatan jari fotografer.", color: "emerald", icon: "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" },
-            { title: "Fearless Culling", desc: "Sistem Undo Non-Destruktif. Salah reject? Cukup tekan Ctrl+Z. Data aman, tidak terhapus prematur.", color: "rose", icon: "M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" },
-            { title: "Precision Inspection", desc: "Histogram RGB real-time dan Data EXIF lengkap (ISO, Shutter, Lensa) langsung tersaji untuk penilaian teknis yang akurat.", color: "cyan", icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" },
-            { title: "Conflict Guard", desc: "Kendali penuh di tangan Anda. Jika ada nama file duplikat, CitraKāra akan meminta konfirmasi (Rename/Overwrite/Skip) agar tidak ada data yang tertimpa tanpa izin.", color: "orange", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" }
-        ],
-        highlights: [
-            { title: "RAW + JPG Linking", desc: "Secara otomatis mendeteksi dan menyatukan file RAW dan JPG. Saat Anda menyortir, kedua file ikut serta. Tidak ada file yang tertinggal.", list: ["Pindah/Copy Sepasang File Sekaligus", "Mode Toggle (Link/Unlink)"] },
-            { title: "Smart Zooming & Focus Peaking", desc: "Jangan buang waktu mengira-ngira fokus. Klik ganda untuk langsung zoom 1:1 (100%) ke titik kursor. Navigasi cepat dengan drag & pan yang responsif.", list: ["Fit to Screen vs 100% View", "Smooth Panning (OpenGL)"] },
-            { title: "Flexible & Fail-Safe", desc: "Pilih gaya kerja Anda: Gunakan mode 'Copy' untuk keamanan backup maksimal, atau mode 'Move' untuk memindahkan file secara instan dan menghemat ruang. Apa pun pilihan Anda, fitur Fail-Safe Undo menjamin file tidak akan hilang jika Anda salah klik.", list: ["Mode Copy & Move", "Proteksi Anti-Tertimpa (Auto Rename)"] }
-        ],
-        specs: {
-            pro: { min: { cpu: "Intel Core i3 Gen 8", ram: "8 GB", gpu: "Intel UHD 620" }, rec: { cpu: "Core i5 Gen 10+ / Ryzen 5", ram: "16 GB (Dual Channel)", gpu: "GTX 1050 / RX 560 ke atas" } },
-            lite: { min: { cpu: "Intel i3 Gen 3 / AMD A6", ram: "4 GB", gpu: "Intel HD 2500" }, rec: { cpu: "Intel i5 Gen 4 / Ryzen 3", ram: "8 GB (Dual Channel)", gpu: "Intel UHD 620 / GT Series" } }
+        {
+            "title": "GPU Accelerated",
+            "desc": "Dibangun dengan engine OpenGL. Zoom in/out, panning, dan transisi antar foto terasa \"buttery smooth\" tanpa patah-patah.",
+            "color": "purple",
+            "icon": "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        },
+        {
+            "title": "Smart Sorting",
+            "desc": "9 Destinasi Hotkey, 1-Key Action, dan Auto-Advance. Sistem yang dirancang khusus untuk kecepatan jari fotografer.",
+            "color": "emerald",
+            "icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+        },
+        {
+            "title": "Fearless Culling",
+            "desc": "Sistem Undo Non-Destruktif. Salah reject? Cukup tekan Ctrl+Z. Data aman, tidak terhapus prematur.",
+            "color": "rose",
+            "icon": "M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"
+        },
+        {
+            "title": "Precision Inspection",
+            "desc": "Histogram RGB real-time dan Data EXIF lengkap (ISO, Shutter, Lensa) langsung tersaji untuk penilaian teknis yang akurat.",
+            "color": "cyan",
+            "icon": "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+        },
+        {
+            "title": "Conflict Guard",
+            "desc": "Kendali penuh di tangan Anda. Jika ada nama file duplikat, CitraKāra akan meminta konfirmasi (Rename/Overwrite/Skip) agar tidak ada data yang tertimpa tanpa izin.",
+            "color": "orange",
+            "icon": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+        },
+        {
+            "title": "Judul Baru",
+            "desc": "Deskripsi...oke",
+            "color": "cyan",
+            "icon": "M13 10V3L4 14h7v7l9-11h-7z"
+        },
+        {
+            "title": "Judullama",
+            "desc": "Deskripsi...asjsjsj",
+            "color": "indigo",
+            "icon": "M13 10V3L4 14h7v7l9-11h-7z"
         }
-    };
+    ],
+    "highlights": [
+        {
+            "title": "RAW + JPG Linking",
+            "desc": "Secara otomatis mendeteksi dan menyatukan file RAW dan JPG. Saat Anda menyortir, kedua file ikut serta. Tidak ada file yang tertinggal.",
+            "list": [
+                "Pindah/Copy Sepasang File Sekaligus",
+                "Mode Toggle (Link/Unlink)"
+            ]
+        },
+        {
+            "title": "Smart Zooming & Focus Peaking",
+            "desc": "Jangan buang waktu mengira-ngira fokus. Klik ganda untuk langsung zoom 1:1 (100%) ke titik kursor. Navigasi cepat dengan drag & pan yang responsif.",
+            "list": [
+                "Fit to Screen vs 100% View",
+                "Smooth Panning (OpenGL)"
+            ]
+        },
+        {
+            "title": "Flexible & Fail-Safe",
+            "desc": "Pilih gaya kerja Anda: Gunakan mode 'Copy' untuk keamanan backup maksimal, atau mode 'Move' untuk memindahkan file secara instan dan menghemat ruang. Apa pun pilihan Anda, fitur Fail-Safe Undo menjamin file tidak akan hilang jika Anda salah klik.",
+            "list": [
+                "Mode Copy & Move",
+                "Proteksi Anti-Tertimpa (Auto Rename)"
+            ]
+        }
+    ],
+    "specs": {
+        "pro": {
+            "min": {
+                "cpu": "Intel Core i3 Gen 8",
+                "ram": "8 GB",
+                "gpu": "Intel UHD 620"
+            },
+            "rec": {
+                "cpu": "Core i5 Gen 10+ / Ryzen 5",
+                "ram": "16 GB (Dual Channel)",
+                "gpu": "GTX 1050 / RX 560 ke atas"
+            }
+        },
+        "lite": {
+            "min": {
+                "cpu": "Intel i3 Gen 3 / AMD A6",
+                "ram": "4 GB",
+                "gpu": "Intel HD 2500"
+            },
+            "rec": {
+                "cpu": "Intel i5 Gen 4 / Ryzen 3",
+                "ram": "8 GB (Dual Channel)",
+                "gpu": "Intel UHD 620 / GT Series"
+            }
+        }
+    }
+};
 
     // --- RENDER LOGIC ---
     const setTxt = (id, txt) => { const el = document.getElementById(id); if(el) el.innerHTML = txt; };
